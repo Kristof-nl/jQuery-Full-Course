@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/query-3.6.0.min.js"></script>
+
+    <script>
+        $("document").ready(function(){
+
+               $("#slide-up").click(function() {
+                   $("#textbox").slideUp("2000", "linear");
+               });
+
+               $("#slide-down").click(function() {
+                   $("#textbox").slideDown("fast", "linear");
+               });
+
+               $("#toggleSlide").click(function() {
+                    $("#textbox").slideToggle("2000", function() {
+                        alert("Done");
+                    });
+               });
+
+        });
+    </script>
+    <style>
+       
+    </style>
+</head>
+
+<body>
+    <a href="#" id="slide-up">Slide Up</a> | <a href="#" id="slide-down">Slide Down</a> | 
+    <a href="#" id="toggleSlide">Toggle</a>
+
+    <div id="textbox">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> Dolores pariatur mollitia quaerat suscipit iusto rerum!
+    </div>
+    
+</body>
+</html>
