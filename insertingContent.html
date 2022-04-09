@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/query-3.6.0.min.js"></script>
+
+    <script>
+        $("document").ready(function(){
+
+            $("#append").click(function() {
+                $("p:first").append("I just apended some copy!");
+
+            });
+
+            $("#prepend").click(function() {
+                $("p:first").prepend("I just prepended some copy!");
+
+            });
+             
+       });
+
+
+
+
+    </script>
+    <style>
+      
+    </style>
+</head>
+
+<body>
+    
+    <a id="append" href="#">Append</a>
+    <a id="prepend" href="#">Preppend</a>
+
+    <div id="container">
+        <p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur mollitia quaerat suscipit iusto rerum!</p>
+
+        <p>2 Lorem ipsum dolor sit amet jquery consectetur adipisicing elit. Dolores pariatur mollitia quaerat suscipit iusto rerum!</p>
+
+        <p>3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur mollitia quaerat suscipit iusto rerum!</p>
+
+        <p> 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur mollitia quaerat suscipit iusto rerum!</p>
+    </div>
+
+
+</body>
+</html>

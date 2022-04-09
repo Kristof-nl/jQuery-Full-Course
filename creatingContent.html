@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/query-3.6.0.min.js"></script>
+
+    <script>
+        $("document").ready(function(){
+
+    //         $("#create_text").click(function() {
+    //            $('#container p:last').text("<p>Replaced and created this text</p>");
+    //     });
+        $("#create_variable").click(function() {
+            var newText = $('#container p:first');
+
+            $("#container p:last").html(newText);
+
+        });
+
+});
+
+
+    </script>
+    <style>
+      
+    </style>
+</head>
+
+<body>
+
+    <a id="create" href="#">Create</a>
+    <a id="create_text" href="#">Create Text</a>
+    <a id="create_variable" href="#">Create Variable</a>
+    
+
+
+    <div id="container">
+        <p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur mollitia quaerat suscipit iusto rerum!</p>
+
+        <p>2 Lorem ipsum dolor sit amet jquery consectetur adipisicing elit. Dolores pariatur mollitia quaerat suscipit iusto rerum!</p>
+
+        <p>3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur mollitia quaerat suscipit iusto rerum!</p>
+
+        <p> 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur mollitia quaerat suscipit iusto rerum!</p>
+    </div>
+
+
+</body>
+</html>
